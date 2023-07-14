@@ -1,0 +1,11 @@
+.post {
+  background-color: #fff;
+  border-radius: 10px;
+  color: #000;
+  display: grid;
+  grid-template-areas: 'img img' 'txt like';
+  grid-template-columns: 220px 62px;
+  grid-template-rows: 282px 79px;
+  position: relative;
+  overflow: hidden;
+}

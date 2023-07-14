@@ -1,0 +1,10 @@
+/* .popup_confirm_delete {
+  grid-template-columns: minmax(40px, 1fr) max-minmax(240px, 410px) minmax(40px, 1fr);
+  grid-template-rows: 1fr 181px 1fr;
+} */
+
+/* @media screen and (max-width: 540px) {
+  .popup_open_photo {
+    grid-template-columns: 40px minmax(240px, auto) 40px;
+  }
+} */

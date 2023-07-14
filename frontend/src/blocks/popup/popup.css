@@ -1,0 +1,22 @@
+.popup {
+  visibility: hidden;
+  opacity: 0;
+  display: grid;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgb(0, 0, 0, .6);
+  grid-template-areas: '. . x' '. pop .' '. . .';
+  grid-template-columns: minmax(20px, auto) minmax(282px, 430px) minmax(20px, auto);
+  grid-template-rows: 1fr minmax(181px, max-content) 1fr;
+  z-index: 5;
+  transition: visibility .3s, opacity .3s ease;
+}
+
+@media screen and (max-width: 540px) {
+  .popup {
+    grid-template-areas: '. x .' '. pop .' '. . .';
+  }
+}

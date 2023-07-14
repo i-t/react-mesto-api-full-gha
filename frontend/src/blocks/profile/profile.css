@@ -1,0 +1,21 @@
+.profile { 
+  padding-bottom: 11px;
+  min-height: 200px;
+  display: grid;
+  grid-template-areas: 
+  "ava name edit . add"
+  "ava txt txt . add";
+  grid-template-columns: 150px minmax(min-content, auto) minmax(43px, 1fr) 19px 150px;
+  grid-template-rows: 110px 90px;
+  align-items: center;
+}
+
+@media screen and (max-width: 913px) {
+  .profile {
+    padding: 42px 19px 36px;
+    grid-template-areas: ". ava ." ". name edit" "txt txt txt" "add add add";
+    grid-template-columns: minmax(28px, 1fr) auto minmax(28px, 1fr);
+    grid-template-rows: 148px auto;
+    justify-items: center;
+  }
+}

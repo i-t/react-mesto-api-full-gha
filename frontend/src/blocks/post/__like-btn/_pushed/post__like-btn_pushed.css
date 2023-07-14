@@ -1,0 +1,8 @@
+.post__like-btn_pushed {
+  background-image: url(../../../../images/post__like-icon_active.svg);
+  opacity: 1;
+}
+
+.post__like-btn_pushed:hover {
+  opacity: .8;
+}

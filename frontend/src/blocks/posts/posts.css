@@ -1,0 +1,15 @@
+.posts {
+  margin: 0 auto;
+  display: grid;
+  gap: 20px 17px;
+  grid-template-columns: repeat(auto-fit, 282px);
+  justify-content: start;
+  min-height: 361px;
+}
+
+@media screen and (max-width: 913px) {
+  .posts {
+    padding: 0 17px;
+    justify-content: center;
+  }
+}

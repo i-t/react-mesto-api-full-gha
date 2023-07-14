@@ -1,0 +1,12 @@
+.popup__input {
+  border-style: none;
+  outline-style: none;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 1px solid rgb(0, 0, 0, .2);
+  height: 27px;
+  padding: 20px 0 4px;
+}
+
+.popup__input::placeholder {
+  color: #c4c4c4;
+}

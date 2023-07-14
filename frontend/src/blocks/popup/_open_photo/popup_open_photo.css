@@ -1,0 +1,11 @@
+.popup_open_photo {
+  grid-template-columns: minmax(40px, 1fr) max-content minmax(40px, 1fr);
+  grid-template-rows: 1fr max-content 1fr;
+  background-color: rgb(0, 0, 0, .9);
+}
+
+@media screen and (max-width: 540px) {
+  .popup_open_photo {
+    grid-template-columns: 40px minmax(240px, auto) 40px;
+  }
+}

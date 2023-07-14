@@ -1,0 +1,17 @@
+.post__photo {
+  border-radius: 8px 8px 0 0;
+  display: block;
+  cursor: pointer;
+  min-height: 282px;
+  min-width: 282px;
+  object-fit: cover;
+  transform: scale(1.15);
+  transition: transform .25s, filter .25s ease-in-out;
+}
+
+.post__photo:hover {
+  transform: scale(1.2);
+  filter: saturate(1.15);
+}
+
+

@@ -1,0 +1,16 @@
+.popup__text-error {
+  visibility: hidden;
+  display: flex;
+  align-self: start;
+  color: #FF0000;
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+.popup__text-error:nth-last-of-type(1) {
+  padding-bottom: 10px;
+}
+
+.popup__text-error:only-of-type {
+  padding: 0;
+}

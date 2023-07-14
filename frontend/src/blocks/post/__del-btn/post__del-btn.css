@@ -1,0 +1,18 @@
+.post__del-btn {
+  width: 18px;
+  height: 19px;
+  background-color: transparent;
+  background-image: url(../../../images/post__del-icon.svg);
+  border: none;
+  position: absolute;
+  cursor: pointer;
+  top: 20px;
+  right: 20px;
+  z-index: 3;
+  transition: opacity .15s ease-in-out;
+  filter: drop-shadow(0px 0px 1px rgb(0, 0, 1, 0.25));
+}
+
+.post__del-btn:hover {
+  opacity: .6;
+}

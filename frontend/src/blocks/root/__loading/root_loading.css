@@ -1,0 +1,16 @@
+@keyframes root__loading {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.root__loading {
+  animation: root__loading 1.5s linear infinite;
+  position: absolute;
+  margin: auto;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  width: 80px;
+}
