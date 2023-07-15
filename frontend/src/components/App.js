@@ -63,7 +63,7 @@ function App() {
       .then((res) => {
         if (res.email) {
           setSuccess(true);
-          navigate('/sign-in', { replace: true })
+          navigate('/signin', { replace: true })
           setInfoTooltipOpen(true);
         }
         return
@@ -203,7 +203,7 @@ function App() {
         />
         <Routes>
           <Route
-            path="/sign-up"
+            path="/signup"
             element={
               <Register
                 auth={handleSignUp}
@@ -211,7 +211,7 @@ function App() {
               />}
           ></Route>
           <Route
-            path="/sign-in"
+            path="/signin"
             element={
               <Login
                 auth={handleSignIn}
