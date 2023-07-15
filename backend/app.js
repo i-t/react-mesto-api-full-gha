@@ -11,7 +11,8 @@ const { requestLogger, errorLogger } = require('./middlewares/logger');
 
 mongoose.connect('mongodb://127.0.0.1:27017/mestodb', {});
 
-// const app = express();
+const app = express();
+
 // const allowedCors = [
 //   'https://praktikum.tk',
 //   'http://praktikum.tk',
