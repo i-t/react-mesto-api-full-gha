@@ -7,7 +7,7 @@ const { SECRET_KEY, NODE_ENV } = process.env;
 // const SECRET_KEY = 'super-secret-key';
 
 function checkToken(token) {
-  return jwt.verify(token, NODE_ENV === 'production' ? SECRET_KEY : 'dev-secret');
+  return jwt.verify(token, NODE_ENV === 'production' ? JWT_SECRET : 'dev-secret');
 }
 
 function signToken(payload) {
