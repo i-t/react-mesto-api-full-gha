@@ -20,17 +20,17 @@ const app = express();
 // ];
 app.use(cors());
 
-// app.use('/post', (req, res, next) => {
-//   res.setHeader(
-//     'Access-Control-Allow-Origin',
-//     '*',
-//   );
-//   res.setHeader(
-//     'Access-Control-Allow-Headers',
-//     'Content-Type',
-//   );
-//   next();
-// });
+app.use('/post', (req, res, next) => {
+  res.setHeader(
+    'Access-Control-Allow-Origin',
+    '*',
+  );
+  res.setHeader(
+    'Access-Control-Allow-Headers',
+    'Content-Type',
+  );
+  next();
+});
 
 app.use(express.json());
 
