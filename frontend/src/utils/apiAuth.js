@@ -1,4 +1,4 @@
-export const BASE_URL = 'http://localhost:3000';
+export const BASE_URL = 'api.i-t.nomoredomains.work';
 
 const getJson = (res) => {
   if (res.ok) {
