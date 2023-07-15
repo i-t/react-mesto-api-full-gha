@@ -1,4 +1,4 @@
-export const BASE_URL = 'api.i-t.nomoredomains.work';
+export const BASE_URL = 'https://api.i-t.nomoredomains.work';
 
 const getJson = (res) => {
   if (res.ok) {
