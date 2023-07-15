@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 
 const UnauthorizedError = require('../utils/errors/UnauthorizedError');
 
+const { NODE_ENV, JWT_SECRET } = process.env;
 const SECRET_KEY = 'super-secret-key';
 
 function checkToken(token) {
@@ -10,7 +11,7 @@ function checkToken(token) {
 }
 
 function signToken(payload) {
-  return jwt.sign(payload, SECRET_KEY, { expiresIn: '7d' });
+  return jwt.sign(payload, NODE_ENV === 'production' ? JWT_SECRET : 'dev-secret', { expiresIn: '7d' });
 }
 
 const auth = (req, res, next) => {

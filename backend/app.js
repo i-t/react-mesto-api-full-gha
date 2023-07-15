@@ -1,4 +1,6 @@
 require('dotenv').config();
+
+console.log(process.env.NODE_ENV);
 const express = require('express');
 const mongoose = require('mongoose');
 const helmet = require('helmet');
@@ -13,9 +15,10 @@ mongoose.connect('mongodb://127.0.0.1:27017/mestodb', {});
 
 const app = express();
 const allowedCors = [
-  'https://praktikum.tk',
-  'http://praktikum.tk',
-  'http://localhost:3001',
+  // 'https://praktikum.tk',
+  // 'http://praktikum.tk',
+  'https://localhost:3001',
+  'https://i-t.nomoredomains.work',
 ];
 app.use(cors(allowedCors));
 
