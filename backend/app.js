@@ -13,12 +13,12 @@ mongoose.connect('mongodb://127.0.0.1:27017/mestodb', {});
 
 const app = express();
 
-const allowedCors = [
+const allowedCors = {
   origin: 'https://i-t.nomoredomains.work',
   //   'https://praktikum.tk',
   //   'http://praktikum.tk',
   //   'http://localhost:3001',
-];
+};
 
 app.use(cors(allowedCors));
 
