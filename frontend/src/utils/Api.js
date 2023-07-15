@@ -1,4 +1,4 @@
-const BASE_URL = 'https://api.i-t.nomoredomains.work';
+const BASE_URL = 'api.i-t.nomoredomains.work';
 
 function getHeaders() {
   return {
