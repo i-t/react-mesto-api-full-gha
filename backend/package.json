@@ -7,7 +7,7 @@
     "start": "node app.js",
     "dev": "nodemon app.js",
     "lint": "npx eslint .",
-    "lint: fix": "npx eslint . --fix"
+    "lint-fix": "npx eslint . --fix"
   },
   "repository": {
     "type": "git",
@@ -15,15 +15,11 @@
   },
   "author": "Egor Shlyakhtin",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/i-t/express-mesto-gha/issues"
-  },
-  "homepage": "https://github.com/i-t/express-mesto-gha#readme",
   "devDependencies": {
     "eslint": "^8.42.0",
-    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",
-    "nodemon": "^1.14.9"
+    "nodemon": "^2.0.22"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
