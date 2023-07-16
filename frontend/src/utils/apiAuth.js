@@ -1,5 +1,5 @@
-// export const BASE_URL = 'https://api.i-t.nomoredomains.work';
-export const BASE_URL = 'http://localhost:3000';
+export const BASE_URL = 'https://api.i-t.nomoredomains.work';
+// export const BASE_URL = 'http://localhost:3000';
 
 const getJson = (res) => {
   if (res.ok) {
