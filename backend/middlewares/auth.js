@@ -11,7 +11,6 @@ function checkToken(token) {
 }
 
 function signToken(payload) {
-
   return jwt.sign(payload, NODE_ENV === 'production' ? SECRET_KEY : 'super-secret-key', { expiresIn: '7d' });
 
   // return jwt.sign(payload, SECRET_KEY, { expiresIn: '7d' });
