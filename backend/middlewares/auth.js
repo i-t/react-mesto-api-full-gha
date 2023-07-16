@@ -7,11 +7,14 @@ const { NODE_ENV, SECRET_KEY } = process.env;
 // const SECRET_KEY = 'super-secret-key';
 
 function checkToken(token) {
-  return jwt.verify(token, SECRET_KEY);
+  return jwt.verify(token, SECRET_KEY || 'super-secret-key');
 }
 
 function signToken(payload) {
+
   return jwt.sign(payload, NODE_ENV === 'production' ? SECRET_KEY : 'super-secret-key', { expiresIn: '7d' });
+
+  // return jwt.sign(payload, SECRET_KEY, { expiresIn: '7d' });
 }
 
 const auth = (req, res, next) => {
