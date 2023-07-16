@@ -42,7 +42,7 @@ function App() {
 
 
   useEffect(() => {
-    const jwt = localStorage.getItem('jwt');
+    const jwt = localStorage.getItem('token');
     if (jwt) {
       apiAuth.checkToken(jwt)
         .then((res) => {
@@ -80,7 +80,7 @@ function App() {
     apiAuth.signIn(email, password)
       .then((data) => {
         if (data.token) {
-          localStorage.setItem('jwt', data.token);
+          localStorage.setItem('token', data.token);
           setLoggedIn(true);
           setUserEmail(email);
           navigate('/', { replace: true })
@@ -94,7 +94,7 @@ function App() {
   }
 
   function handleLogout() {
-    localStorage.removeItem('jwt')
+    localStorage.removeItem('token')
     setLoggedIn(false);
   }
 

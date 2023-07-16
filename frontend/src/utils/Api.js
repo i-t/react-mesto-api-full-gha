@@ -2,9 +2,10 @@
 const BASE_URL = 'http://localhost:3000';
 
 function getHeaders() {
+  console.log(localStorage.getItem('token'));
   return {
     "Content-Type": "application/json",
-    authorization: localStorage.getItem('jwt')
+    authorization: localStorage.getItem('token'),
   }
 }
 
